@@ -1,8 +1,6 @@
 # ESP32-8266-Audio-Spectrum-Display
 
-The ESP8266 variant can display a flat response between 100Hz and 5.2Khz and is limited by the ADC conversion time.
-
-The ESP32 variant, can display a flat response between 50Hz and 20Khz and is less limited by ADC conversion time and uses 256 samples for.
+The ESP32 can display a flat response between 50Hz and 20Khz and is less limited by ADC conversion time and uses 256 samples.
 
 I've been working a few days on my own version so that it creates an animation similar to Apple music lockscreen widget.
 So the number of bands is reduced to 6, and there is a smoothness curve applied to the measurements so that the appearance is better.
