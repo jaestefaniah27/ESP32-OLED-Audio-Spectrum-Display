@@ -5,6 +5,7 @@ The ESP32 can display a flat response between 50Hz and 20Khz and is less limited
 I've been working a few days on my own version so that it creates an animation similar to Apple music lockscreen widget.
 So the number of bands is reduced to 6, and there is a smoothness curve applied to the measurements so that the appearance is better.
 For this, I adapted the information seen here: https://stackoverflow.com/questions/13462001/ease-in-and-ease-out-animation-formula
+
 Thank you Eugenio for the idea (https://github.com/ECMGS).
 
 The microphone amplifier Im using is the Adafruit MAX9814: https://www.adafruit.com/product/1713 (i bought it from alliexpress cheaper).
