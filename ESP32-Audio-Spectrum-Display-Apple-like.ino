@@ -131,7 +131,8 @@ for (int bucle = 0; bucle < 30; bucle++){
   }
   // Filter the noise and update the control points for the smoothing
   for (int i = 0; i < 6; i++) {
-    if (max[i] < filter[mode_index]) max[i] = 0;
+    max[i] -= filter[mode_index];
+    if (max[i] < 0) max[i] = 0;
     updateControlPoints(max[i], i);
   }
   // Compute the smoothed values for each band
