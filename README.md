@@ -3,10 +3,8 @@
 The ESP32 can display a flat response between 50Hz and 20Khz and is less limited by ADC conversion time and uses 256 samples.
 
 I've been working a few days on my own version so that it creates an animation similar to Apple music lockscreen widget.
-So the number of bands is reduced to 6, and there is a smoothness curve applied to the measurements so that the appearance is better.
-For this, I adapted the information seen here: https://stackoverflow.com/questions/13462001/ease-in-and-ease-out-animation-formula
-
-Thank you Eugenio for the idea (https://github.com/ECMGS).
+So the number of bands is reduced to 6, and there is a smoothness curve applied to the measurements to improve the appearance.
+For this, I adapted the information seen here: https://stackoverflow.com/questions/13462001/ease-in-and-ease-out-animation-formula. Thank you Eugenio for the idea (https://github.com/ECMGS).
 
 The microphone amplifier Im using is the Adafruit MAX9814: https://www.adafruit.com/product/1713 (i bought it from alliexpress cheaper).
 Even though it has an automatic gain controll, I've added my own automatic gain controll on top of the audio amplifier one, so that when the audio is saturating it automatically decreases the gain, and when there is less audio input, it increases the gain to hear better. For this to work, you have to connect the GAIN pin of the microphone  to the pin 13 of the esp32 (you can change it as you like). If you dont connect it, the gain will always be 60 dB.
