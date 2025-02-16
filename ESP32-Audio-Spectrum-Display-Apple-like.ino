@@ -114,7 +114,7 @@ for (int bucle = 0; bucle < 30; bucle++){
   // Sample the audio signal
   for (int i = 0; i < SAMPLES; i++) {
     unsigned long newTime = micros();
-    vReal[i] = analogRead(34);
+    vReal[i] = analogRead(12);
     vImag[i] = 0;
     while ((micros() - newTime) < sampling_period_us) { /* do nothing to wait */
     }
